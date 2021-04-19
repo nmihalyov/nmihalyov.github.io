@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+  <head>
+    <title>Gulp Pure Start</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Frontend web developer">
+    <meta name="keywords" content="frontend, web, developer, react, vue, javascript">
+    <meta name="theme-color" content="#202020">
+    <meta name="copyright" content="Nikita Mihalyov &lt;nikita.mihalyov@gmail.com&gt;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#202020">
+    <meta name="apple-mobile-web-app-title" content="Nikita Mihalyov">
+    <meta name="msapplication-TileImage" content="img/favicons/144x144.png">
+    <meta name="msapplication-TileColor" content="#202020">
+    <meta name="format-detection" content="telephone=no">
+        <meta property="og:title" content="Nikita Mihalyov">
+        <meta property="og:url" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="img/og.png">
+        <meta property="og:description" content="Frontend web developer">
+    <style>:after,:before{text-decoration:inherit;vertical-align:inherit}html{line-height:1.5;-moz-tab-size:4;tab-size:4;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;word-break:break-word}body{margin:0}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}button,input{margin:0}button{overflow:visible;text-transform:none}[type=submit],button{-webkit-appearance:button}input{overflow:visible}[type=checkbox],[type=radio]{padding:0}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}a,button,input,label{-ms-touch-action:manipulation}button,input{background-color:transparent;border:1px solid WindowFrame;color:inherit;font:inherit;letter-spacing:inherit;padding:.25em .375em}::-ms-expand{display:none}:-ms-input-placeholder{color:rgba(0,0,0,.54)}@font-face{font-family:Montserrat;src:url(../../fonts/Montserrat/Montserrat-Thin.ttf) format("truetype");font-weight:100;font-style:normal}@font-face{font-family:Montserrat;src:url(../../fonts/Montserrat/Montserrat-ExtraLight.ttf) format("truetype");font-weight:200;font-style:normal}@font-face{font-family:Montserrat;src:url(../../fonts/Montserrat/Montserrat-Light.ttf) format("truetype");font-weight:300;font-style:normal}@font-face{font-family:Montserrat;src:url(../../fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:Montserrat;src:url(../../fonts/Montserrat/Montserrat-Medium.ttf) format("truetype");font-weight:500;font-style:normal}@font-face{font-family:Montserrat;src:url(../../fonts/Montserrat/Montserrat-SemiBold.ttf) format("truetype");font-weight:600;font-style:normal}@font-face{font-family:Montserrat;src:url(../../fonts/Montserrat/Montserrat-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:Montserrat;src:url(../../fonts/Montserrat/Montserrat-ExtraBold.ttf) format("truetype");font-weight:900;font-style:normal}@font-face{font-family:Montserrat;src:url(../../fonts/Montserrat/Montserrat-Black.ttf) format("truetype");font-weight:900;font-style:normal}*,:after,:before{box-sizing:border-box;margin:0;padding:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;text-size-adjust:none}body{width:100%;min-height:100vh;line-height:1.4;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;font-smoothing:antialiased;font-family:Montserrat,Helvetica,sans-serif;font-size:18px;font-weight:400}h1,h3,h4,p{margin:0}a{color:#202020}.container{width:100%}.container .wrapper{max-width:1200px;width:100%;margin:0 auto;padding:0 30px}.button{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;padding:10px 20px;border-radius:4px;border:none;text-decoration:none;color:#fff;outline:0;text-align:center;font-size:14px;font-weight:300}.button--disabled{filter:grayscale(1)}.button--primary{background-color:#f24040}.button--secondary{padding:9px 19px;border:1px solid #202020;color:#202020}.input{display:block}.input--error .input__error{display:block}.input__label{margin-bottom:5px;color:#202020}.input__field,.input__label{font-size:14px;font-weight:500}.input__field{display:block;width:100%;padding:10px 15px;border:1px solid rgba(32,32,32,.5);border-radius:4px;background-color:#fff;outline:0;line-height:1.33;word-break:keep-all;-webkit-appearance:none;font-family:Montserrat,Helvetica,sans-serif}.input__field[readonly]{background-color:#efefef}.input__field::-ms-input-placeholder{opacity:.5;color:#202020}.input__field::-webkit-input-placeholder{opacity:.5;color:#202020}.input__field::-moz-placeholder{opacity:.5;color:#202020}.input__field:-ms-input-placeholder{opacity:.5;color:#202020}.input__field:-moz-placeholder{opacity:.5;color:#202020}.input__error{display:none;margin:5px 0;color:#ff564e;font-size:14px;font-weight:500}.checkbox{display:-ms-flexbox;display:flex;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-align:start;align-items:flex-start}.checkbox__input{opacity:0;visibility:hidden;width:0;height:0;margin:0}.checkbox__box{-ms-flex-negative:0;flex-shrink:0;width:20px;height:20px;margin-right:10px;border:1px solid rgba(32,32,32,.5);border-radius:4px;background-color:#fff}.checkbox__box-mark{position:relative;top:4px;left:3px;width:12px;height:7px;transform:rotate(-45deg)}.checkbox__box-mark:after,.checkbox__box-mark:before{content:"";position:absolute;background-color:#fff}.checkbox__box-mark:before{height:0;width:2px}.checkbox__box-mark:after{top:5px;height:2px;width:0}.checkbox__text{padding-top:2px;font-size:14px;font-weight:500}.radio{display:-ms-flexbox;display:flex;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-align:start;align-items:flex-start}.radio__input{opacity:0;visibility:hidden;width:0;height:0;margin:0}.radio__input:checked~.radio__box{border-color:#202020}.radio__input:checked~.radio__box:after{opacity:1}.radio__box{position:relative;-ms-flex-negative:0;flex-shrink:0;width:18px;height:18px;margin-right:10px;border:1px solid rgba(32,32,32,.5);border-radius:50%}.radio__box:after{opacity:0;content:"";top:50%;left:50%;width:9px;height:9px;position:absolute;background-color:#202020;border-radius:50%;transform:translate(-50%,-50%)}.radio__text{font-size:14px;font-weight:500}.popup{z-index:3;position:fixed;top:0;left:0;right:0;bottom:0;display:none}.popup__container{position:relative;width:100%;height:100%;padding:50px 0;overflow:scroll}.popup__backdrop{opacity:0;z-index:1;position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.7)}.popup__wrapper{z-index:2;position:relative;min-height:100%;width:100%;display:-ms-flexbox;display:flex;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center}.popup__window{opacity:0;position:relative;max-width:400px;width:100%;padding:30px 20px;background-color:#fff;border-radius:8px;transform:translateY(-50px)}.popup__close{position:absolute;top:10px;right:10px;width:22px;height:22px;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg width='22' height='23' viewBox='0 0 22 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23333' d='M16.995 6.998L6.388 17.605 4.974 16.19 15.581 5.584z'/%3E%3Cpath fill='%23333' d='M4.975 6.999L15.58 17.606l1.414-1.415L6.39 5.585z'/%3E%3C/svg%3E");background-size:contain;background-position:50%;background-repeat:no-repeat}@media only screen and (max-width:1199px){body{font-size:16px}.container .wrapper{max-width:768px;padding:0 20px}}@media only screen and (max-width:767px){body{font-size:14px}.container .wrapper{max-width:320px;padding:0 10px}}</style>
+    <link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'">
+    <link rel="shortcut icon" href="img/favicons/64x64.png" type="image/png">
+    <link rel="icon" href="img/favicons/152x152.png" type="image/png" sizes="152x152">
+    <link rel="icon" href="img/favicons/256x256.png" type="image/png" sizes="256x256">
+    <link rel="icon" href="img/favicons/512x512.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="img/favicons/152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="img/favicons/256x256.png" sizes="256x256">
+    <link rel="apple-touch-icon" href="img/favicons/512x512.png" sizes="512x512">
+    <link rel="manifest" href="../manifest.json">
+    <script defer="" src="js/common.min.js"></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header container">
+        <div class="header__wrapper wrapper"></div>
+      </header>
+      <section class="container"> 
+        <div class="wrapper">
+          <div style="display: flex; justify-content: space-between; align-items: center">
+            <h1 style="margin: 35px 0">Gulp Pure Start <sup style="font-size: 12px">v1.3.0</sup></h1><a class="button button--secondary " href="https://github.com/nmihalyov/gulp-pure-start" target="_blank">Репозиторий на GitHub</a>
+          </div>
+          <h3 style="margin-bottom: 25px">Примеры компонентов</h3>
+          <h4 style="margin-bottom: 10px">1. Кнопки</h4>
+          <div style="display: flex; margin-bottom: 10px">
+            <div style="margin-right: 10px"><a class="button button--primary " href="#" target="_self">Основная</a>
+            </div>
+            <div><a class="button button--secondary " href="#" target="_self">Второстепенная</a>
+            </div>
+          </div>
+          <div style="display: flex; margin-bottom: 25px">
+            <div style="margin-right: 10px"><a class="button button--primary button--disabled" href="#" target="_self">Основная отключена</a>
+            </div>
+            <div><a class="button button--secondary button--disabled" href="#" target="_self">Второстепенная отключена</a>
+            </div>
+          </div>
+          <h4 style="margin-bottom: 10px">2. Инпуты</h4>
+          <div style="max-width: 400px; margin-bottom: 10px">
+            <label class="input">
+              <p class="input__label">Лейбл:</p>
+              <input class="input__field" type="text" name="data" placeholder="Плейсхолдер" value=""/>
+              <p class="input__error">Неверные данные</p>
+            </label>
+          </div>
+          <div style="max-width: 400px; margin-bottom: 10px">
+            <label class="input">
+              <input class="input__field" type="text" name="data" placeholder="Плейсхолдер" value="Только для чтения" readonly="readonly"/>
+            </label>
+          </div>
+          <div style="max-width: 400px; margin-bottom: 25px">
+            <label class="input input--error">
+              <p class="input__label">Инпут с ошибкой:</p>
+              <input class="input__field input--error-field" type="text" name="error" placeholder="Плейсхолдер" value="Текст"/>
+              <p class="input__error">Неверные данные</p>
+            </label>
+          </div>
+          <h4 style="margin-bottom: 10px">3. Чекбоксы</h4>
+          <div style="max-width: 400px; margin-bottom: 25px">
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="policy" required="required"/>
+              <div class="checkbox__box">
+                <div class="checkbox__box-mark"></div>
+              </div>
+              <p class="checkbox__text">Согласен с <a href="#">Политикой конфиденциальности</a></p>
+            </label>
+          </div>
+          <h4 style="margin-bottom: 10px">4. Радио-кнопки</h4>
+          <div style="margin-bottom: 10px">
+            <label class="radio">
+              <input class="radio__input" type="radio" name="variant" value="1" checked="checked"/>
+              <div class="radio__box"></div>
+              <p class="radio__text">Вариант 1</p>
+            </label>
+          </div>
+          <div style="margin-bottom: 10px">
+            <label class="radio">
+              <input class="radio__input" type="radio" name="variant" value="2"/>
+              <div class="radio__box"></div>
+              <p class="radio__text">Вариант 2</p>
+            </label>
+          </div>
+          <div style="margin-bottom: 10px">
+            <label class="radio">
+              <input class="radio__input" type="radio" name="variant" value="3"/>
+              <div class="radio__box"></div>
+              <p class="radio__text">Вариант 3</p>
+            </label>
+          </div>
+          <div style="margin-bottom: 25px">
+            <label class="radio">
+              <input class="radio__input" type="radio" name="variant" value="4"/>
+              <div class="radio__box"></div>
+              <p class="radio__text">Вариант 4</p>
+            </label>
+          </div>
+          <h4 style="margin-bottom: 10px">5. Попапы</h4>
+          <div style="margin-bottom: 25px">
+            <button class="button js-open-popup button--primary " data-popup="form">Открыть попап</button>
+          </div>
+        </div>
+      </section>
+      <footer class="footer container">
+        <div class="footer__wrapper wrapper"></div>
+      </footer>
+    </div>
+    <div class="popup js-popup js-close-popup" data-popup="form">
+      <div class="popup__backdrop"></div>
+      <div class="popup__container">
+        <div class="popup__wrapper">
+          <div class="popup__window">
+            <div class="popup__close js-close-popup"></div>
+            <form class="popup__form" action="">
+              <p style="margin-bottom: 20px; text-align: center">Форма входа</p>
+              <div style="margin-bottom: 10px;">
+                <label class="input">
+                  <p class="input__label">E-mail:</p>
+                  <input class="input__field" type="email" name="email" placeholder="Введите ваш e-mail" value=""/>
+                  <p class="input__error">Неверные данные</p>
+                </label>
+              </div>
+              <div style="margin-bottom: 20px;">
+                <label class="input">
+                  <p class="input__label">Пароль:</p>
+                  <input class="input__field" type="password" name="password" placeholder="Введите ваш пароль" value=""/>
+                  <p class="input__error">Неверные данные</p>
+                </label>
+              </div>
+              <div style="display: flex; justify-content: center;">
+                <div style="margin: 0 5px;">
+                  <button class="button button--primary " type="submit">Войти</button>
+                </div>
+                <div style="margin: 0 5px;"><a class="button button--secondary js-close-popup" href="#" target="_self">Закрыть</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
+  </body>
+</html>

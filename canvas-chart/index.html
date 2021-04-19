@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <title>Canvas chart</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frontend web developer">
+    <meta name="keywords" content="frontend, web, developer, react, vue, javascript">
+    <meta name="theme-color" content="#202020">
+    <meta name="copyright" content="Nikita Mihalyov &lt;nikita.mihalyov@gmail.com&gt;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#202020">
+    <meta name="apple-mobile-web-app-title" content="Nikita Mihalyov">
+    <meta name="msapplication-TileImage" content="img/favicons/144x144.png">
+    <meta name="msapplication-TileColor" content="#202020">
+    <meta name="format-detection" content="telephone=no">
+        <meta property="og:title" content="Nikita Mihalyov">
+        <meta property="og:url" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="img/og.png">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicons/64x64.png" type="image/png">
+    <link rel="icon" href="img/favicons/152x152.png" type="image/png" sizes="152x152">
+    <link rel="icon" href="img/favicons/256x256.png" type="image/png" sizes="256x256">
+    <link rel="icon" href="img/favicons/512x512.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="img/favicons/152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="img/favicons/256x256.png" sizes="256x256">
+    <link rel="apple-touch-icon" href="img/favicons/512x512.png" sizes="512x512">
+    <link rel="manifest" href="../manifest.json">
+    <script defer src="utils.js"></script>
+    <script defer src="tooltip.js"></script>
+    <script defer src="controls.js"></script>
+    <script defer src="slider.js"></script>
+    <script defer src="chart.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body data-theme="dark">
+    <a class="button" href="https://github.com/nmihalyov/canvas-chart" target="_blank" rel="noopener">Open GitHub repository</a>
+		<div class="chart">
+			<canvas data-chart></canvas>
+			<div class="slider">
+				<canvas data-slider></canvas>
+				<div class="slider__left" data-left>
+					<div class="slider__left-arrow" data-el="left"></div>
+				</div>
+				<div class="slider__window" data-el="window"></div>
+				<div class="slider__right" data-right>
+					<div class="slider__right-arrow" data-el="right"></div>
+				</div>
+			</div>
+			<div class="controls-wrapper">
+				<div class="controls"></div>
+				<button class="theme">Toggle theme</button>
+			</div>
+			<div class="tooltip" data-tooltip></div>
+		</div>
+  </body>
+</html>
