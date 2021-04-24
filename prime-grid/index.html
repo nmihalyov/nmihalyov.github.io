@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <title>Prime Grid documentation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Frontend web developer">
+    <meta name="keywords" content="frontend, web, developer, react, vue, jasvascript">
+    <meta name="theme-color" content="#202020">
+    <meta name="copyright" content="Nikita Mihalyov <nikita.mihalyov@gmail.com>">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#202020">
+    <meta name="apple-mobile-web-app-title" content="Nikita Mihalyov">
+    <meta name="msapplication-TileImage" content="../img/favicons/144x144.png">
+    <meta name="msapplication-TileColor" content="#202020">
+    <meta name="format-detection" content="telephone=no">
+        <meta property="og:title" content="Nikita Mihalyov">
+        <meta property="og:url" content="nmihalyov.tk">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="../img/og.png">
+        <meta property="og:description" content="Frontend web developer">
+    <style>:after,:before{text-decoration:inherit;vertical-align:inherit}html{line-height:1.5;-moz-tab-size:4;tab-size:4;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;word-break:break-word}body{margin:0}h1{font-size:2em;margin:.67em 0}main{display:block}pre{font-family:monospace,monospace;font-size:1em;overflow:auto;-ms-overflow-style:scrollbar}a{background-color:transparent}b{font-weight:bolder}code{font-family:monospace,monospace;font-size:1em}button{margin:0}button{overflow:visible;text-transform:none}button{-webkit-appearance:button}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}::-moz-focus-inner{border-style:none;padding:0}:-moz-focusring{outline:1px dotted ButtonText}:-moz-ui-invalid{box-shadow:none}a,button{-ms-touch-action:manipulation}button{background-color:transparent;border:1px solid WindowFrame;color:inherit;font:inherit;letter-spacing:inherit;padding:.25em .375em}::-ms-expand{display:none}:-ms-input-placeholder{color:rgba(0,0,0,.54)}.container{max-width:1320px;margin-left:auto;margin-right:auto}.row{display:-ms-flexbox;display:flex;-ms-flex:0 1 auto;flex:0 1 auto;-ms-flex-flow:row wrap;flex-flow:row wrap;width:100%;box-sizing:border-box;margin:0 auto;padding:0 8px}.col,.col-2,.col-8{-ms-flex:0 0 auto;flex:0 0 auto;max-width:100%;box-sizing:border-box;padding:0 8px}.col{-ms-flex:1 0 0px;flex:1 0 0}.col-2{-ms-flex-preferred-size:16.66667%;flex-basis:16.66667%;max-width:16.66667%}.col-8{-ms-flex-preferred-size:66.66667%;flex-basis:66.66667%;max-width:66.66667%}.row-center{-ms-flex-pack:center;justify-content:center}@font-face{font-family:SF UI Display;src:url(../../fonts/SFUIDisplay/SFUIDisplay-Light.woff) format("woff");font-weight:300;font-style:normal}@font-face{font-family:SF UI Display;src:url(../../fonts/SFUIDisplay/SFUIDisplay-Heavy.woff) format("woff");font-weight:700;font-style:normal}@font-face{font-family:Raleway;src:url(../../fonts/Raleway/Raleway-Black.ttf) format("truetype");font-weight:900;font-style:normal}*,:after,:before{box-sizing:border-box;margin:0;padding:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;text-size-adjust:none}html{scroll-behavior:smooth}body{width:100%;min-height:100vh;line-height:1.4;color:#202020;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;font-smoothing:antialiased;font-family:SF UI Display,Helvetica,sans-serif;font-size:18px;font-weight:400}p{margin:0;margin-bottom:.5em;line-height:1.5}h1,h2{margin:0}a{color:#202020}main{margin-bottom:0!important}.container{width:100%;margin-bottom:80px}.container[id]{margin-top:-16px;padding-top:16px}.mb{margin-bottom:30px}.head{padding-top:60px;text-align:center}.head .title{font-family:Raleway,Helvetica,sans-serif;font-size:72px}.head .subtitle{margin-bottom:20px;font-size:26px;font-weight:300}.head .buttons{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center}.head .buttons .button{margin:0 10px}.nav{position:sticky;top:16px}.nav__item{display:block;padding:6px 8px;border-radius:4px;text-decoration:none;font-size:16px}pre{width:100%;border:1px solid #dee2e6;white-space:pre}pre,pre code{display:block}pre code{padding:24px!important;background-color:#f8f9fa!important;word-break:normal;font-size:16px}.tabs{width:100%}.tabs__head{display:-ms-flexbox;display:flex}.tabs__item{padding:9px 17px 8px;border-top-right-radius:4px;border-top-left-radius:4px;border:none;color:#007fff;outline:0;font-size:16px}.tabs__item--active{padding:8px 16px;border:1px solid #dee2e6;border-bottom:none;color:#202020}.tabs__box{display:none}.tabs__box--active{display:block}.tabs pre,.tabs pre code{width:100%}.button{display:-ms-inline-flexbox;display:inline-flex;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-pack:center;justify-content:center;-ms-flex-align:center;align-items:center;padding:10px 20px;border-radius:4px;border:none;text-decoration:none;color:#fff;outline:0;text-align:center;font-size:14px;font-weight:300}.button--primary{background-color:#f24040}.button--secondary{padding:9px 19px;border:1px solid #202020;color:#202020}.button__icon{display:block;width:15px;height:15px;margin-right:10px;background-position:50%;background-size:contain;background-repeat:no-repeat}.button__icon--github{background-image:url(../../img/icons/github.svg)}.button__icon--download{background-image:url(../../img/icons/download.svg)}.heading{display:inline-block;margin:0 0 15px;padding:5px 10px;background-color:#202020;color:#fff;font-size:26px;font-weight:700}@media only screen and (max-width:1399px){.container{max-width:1320px}}@media only screen and (max-width:1199px){.container{max-width:1140px}}@media only screen and (max-width:991px){.container{max-width:960px}.row.no-hor-gutter-md{padding-left:0;padding-right:0}.col-md{-ms-flex:0 0 auto;flex:0 0 auto;max-width:100%;box-sizing:border-box;padding:0 8px}.col-md.no-hor-gutter-md{padding-left:0;padding-right:0}.col-md{-ms-flex:1 0 0px;flex:1 0 0}.hide-md{display:none}}@media only screen and (max-width:767px){.container{max-width:720px}body{font-size:14px}.container{margin-bottom:40px}.mb{margin-bottom:15px}.head{padding-top:30px}.head .title{font-size:42px}.head .subtitle{font-size:20px}.head .buttons{-ms-flex-direction:column;flex-direction:column;-ms-flex-align:center;align-items:center}.head .buttons .button{width:200px;margin:5px 0}pre code{padding:16px!important}.tabs__item,pre code{font-size:14px}.heading{margin-bottom:10px;font-size:22px}}@media only screen and (max-width:575px){.container{max-width:540px}}</style>
+    <link rel="stylesheet" href="css/style.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" media="print" onload="this.media='all'">
+    <link rel="shortcut icon" href="../img/favicons/64x64.png" type="image/png">
+    <link rel="icon" href="../img/favicons/152x152.png" type="image/png" sizes="152x152">
+    <link rel="icon" href="../img/favicons/256x256.png" type="image/png" sizes="256x256">
+    <link rel="icon" href="../img/favicons/512x512.png" type="image/png" sizes="512x512">
+    <link rel="apple-touch-icon" href="../img/favicons/152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="../img/favicons/256x256.png" sizes="256x256">
+    <link rel="apple-touch-icon" href="../img/favicons/512x512.png" sizes="512x512">
+    <link rel="manifest" href="../manifest.json">
+    <script defer="" src="js/common.min.js"></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <section class="container">
+        <div class="row row-center">
+          <div class="col">
+            <div class="head">
+              <h1 class="title">Prime Grid</h1>
+              <h2 class="subtitle">A prime grid for your projects!</h2>
+              <div class="buttons"><a class="button button--primary " download="prime-grid-1.6.4.zip" href="prime-grid-1.6.4.zip" target="_blank" rel="noopener"><span class="button__icon button__icon--download"></span> Download ZIP</a><a class="button button--secondary " href="https://github.com/nmihalyov/prime-grid" target="_blank" rel="noopener"><span class="button__icon button__icon--github"></span> View on GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <main class="container">
+        <div class="row no-hor-gutter-md">
+          <div class="col-2 hide-md">
+            <nav class="nav"><a class="nav__item js-anchor" href="#getting-started">Getting started</a><a class="nav__item js-anchor" href="#usage">Usage</a><a class="nav__item js-anchor" href="#breakpoints">Breakpoints</a><a class="nav__item js-anchor" href="#container">Container</a><a class="nav__item js-anchor" href="#row">Row</a><a class="nav__item js-anchor" href="#column">Column</a><a class="nav__item js-anchor" href="#12-column-based">12-column based</a><a class="nav__item js-anchor" href="#responsiveness">Responsiveness</a><a class="nav__item js-anchor" href="#offset">Offset</a><a class="nav__item js-anchor" href="#nesting">Nesting</a><a class="nav__item js-anchor" href="#alignment">Alignment</a><a class="nav__item js-anchor" href="#distribution">Distribution</a><a class="nav__item js-anchor" href="#reordering">Reordering</a><a class="nav__item js-anchor" href="#breakage">Breakage</a><a class="nav__item js-anchor" href="#visibility">Visibility</a><a class="nav__item js-anchor" href="#gutter">Gutter</a></nav>
+          </div>
+          <div class="col-8 col-md no-hor-gutter-md">
+            <section class="container" id="getting-started">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Getting started</div>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p>First, download <b>Prime Grid</b> using download button above or</p>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p>Clone repository directly to your project</p>
+                  <pre><code class="bash">git clone https://github.com/nmihalyov/prime-grid.git</code></pre>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p>Install via NPM</p>
+                  <pre><code class="bash">npm i prime-grid</code></pre>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>Install via Yarn</p>
+                  <pre><code class="bash">yarn add prime-grid</code></pre>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="usage">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Usage</div>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p>If you want to use grid as it is and dont't want to change any variables, you can just put css file into your project folder and import it</p>
+                  <pre><code class="html">&lt;link rel=&quot;stylesheet&quot; href=&quot;path/to/prime-grid.min.css&quot;&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p>If you installed <b>Prime Grid</b> via package manager and you are using Sass/Scss you can import corresponding file</p>
+                  <div class="tabs">
+                    <div class="tabs__head">
+                      <button class="tabs__item tabs__item--active" data-tab="scss">Scss</button>
+                      <button class="tabs__item" data-tab="sass">Sass</button>
+                    </div>
+                    <div class="tabs__content">
+                      <div class="tabs__box tabs__box--active" data-tab="scss">
+                        <pre><code class="scss">@import 'node_modules/prime-grid/dist/prime-grid.scss';</code></pre>
+                      </div>
+                      <div class="tabs__box" data-tab="sass">
+                        <pre><code class="sass">@import 'node_modules/prime-grid/dist/prime-grid.sass'</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>To define your own grid settings you can override variables values before import</p>
+                  <div class="tabs">
+                    <div class="tabs__head">
+                      <button class="tabs__item tabs__item--active" data-tab="scss">Scss</button>
+                      <button class="tabs__item" data-tab="sass">Sass</button>
+                    </div>
+                    <div class="tabs__content">
+                      <div class="tabs__box tabs__box--active" data-tab="scss">
+                        <pre><code class="scss">/* Defines spacing between columns and rows (default is 16px) */<br>$gutter: 20px;<br><br>/* Dimensions below which new grid styles are applied */<br>$breakpoints: (&quot;xl&quot;: 1600px, &quot;lg&quot;: 1280px, &quot;md&quot;: 992px, &quot;sm&quot;: 768px, &quot;xs&quot;: 576px);<br><br>/* Sets new max container width below each breakpoint (see $breakpoints) */<br>$container-max-widths: (&quot;default&quot;: 1600px, &quot;xl&quot;: 1440px, &quot;lg&quot;: 1200px, &quot;md&quot;: 960px, &quot;sm&quot;: 720px, &quot;xs&quot;: 540px);<br><br>@import 'node_modules/prime-grid/dist/prime-grid.scss';</code></pre>
+                      </div>
+                      <div class="tabs__box" data-tab="sass">
+                        <pre><code class="sass">/* Defines spacing between columns and rows (default is 16px) */<br>$gutter: 20px<br><br>/* Dimensions below which new grid styles are applied */<br>$breakpoints: (&quot;xl&quot;: 1600px, &quot;lg&quot;: 1280px, &quot;md&quot;: 992px, &quot;sm&quot;: 768px, &quot;xs&quot;: 576px)<br><br>/* Sets new max container width below each breakpoint (see $breakpoints) */<br>$container-max-widths: (&quot;default&quot;: 1600px, &quot;xl&quot;: 1440px, &quot;lg&quot;: 1200px, &quot;md&quot;: 960px, &quot;sm&quot;: 720px, &quot;xs&quot;: 540px)<br><br>@import 'node_modules/prime-grid/dist/prime-grid.sass'</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="breakpoints">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Breakpoints</div>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p>Breakpoints are customizable widths that determine how your responsive layout behaves across devices. <b>Prime Grid</b> has 5 default breakpoints which can be customized via variable override (see <a href="#usage" class="link">Usage</a>)</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="table">
+                    <div class="table__inner">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Breakpoint</th>
+                            <th>Class infix</th>
+                            <th>Dimensions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Default</td>
+                            <td>–</td>
+                            <td>All</td>
+                          </tr>
+                          <tr>
+                            <td>Extra large</td>
+                            <td><code>xl</code></td>
+                            <td>< 1400px</td>
+                          </tr>
+                          <tr>
+                            <td>Large</td>
+                            <td><code>lg</code></td>
+                            <td>< 1200px</td>
+                          </tr>
+                          <tr>
+                            <td>Medium</td>
+                            <td><code>md</code></td>
+                            <td>< 992px</td>
+                          </tr>
+                          <tr>
+                            <td>Small</td>
+                            <td><code>sm</code></td>
+                            <td>< 768px</td>
+                          </tr>
+                          <tr>
+                            <td>Extra small</td>
+                            <td><code>xs</code></td>
+                            <td>< 576px</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="container">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Container</div>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p><code>.container</code> is the main block of layout that contains all other grid elements. You can use as much containers as you want and nest them.</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> ...<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>Default containers has limited <code>max-width</code> which can be changed (see <a href="#usage" class="link">Usage</a>). Default maximum widths for containers are:</p>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <div class="table">
+                    <div class="table__inner">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Breakpoint</th>
+                            <th>Class infix</th>
+                            <th>Maximum container width</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Default</td>
+                            <td>–</td>
+                            <td>1320px</td>
+                          </tr>
+                          <tr>
+                            <td>Extra large</td>
+                            <td><code>xl</code></td>
+                            <td>1320px</td>
+                          </tr>
+                          <tr>
+                            <td>Large</td>
+                            <td><code>lg</code></td>
+                            <td>1140px</td>
+                          </tr>
+                          <tr>
+                            <td>Medium</td>
+                            <td><code>md</code></td>
+                            <td>960px</td>
+                          </tr>
+                          <tr>
+                            <td>Small</td>
+                            <td><code>sm</code></td>
+                            <td>720px</td>
+                          </tr>
+                          <tr>
+                            <td>Extra small</td>
+                            <td><code>xs</code></td>
+                            <td>540px</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p>If you want the container to be full width use <code>.container-fluid</code> instead.</p>
+                  <pre><code class="html">&lt;div class=&quot;container-fluid&quot;&gt;<br> ...<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>Full and limited container width can be changed on different breakpoints by combining classes: <code>.container-{breakpoint}</code> and <code>.container-fluid-{breakpoint}</code></p>
+                  <pre><code class="html">&lt;div class=&quot;container container-fluid-lg container-sm&quot;&gt;<br> ...<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="row">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Row</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.row</code> contains all the columns and placed within <code>.container</code> element.</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row&quot;&gt;<br>   ...<br> &lt;/div&gt;<br> &lt;div class=&quot;row&quot;&gt;<br>   ...<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="column">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Column</div>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p><code>.col</code> is a cell for your content that is placed within the <code>.row</code>.</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row&quot;&gt;<br>   &lt;div class=&quot;col&quot;&gt;<br>     ...<br>   &lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;<br>     ...<br>   &lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p>By default <code>.col</code> will be stretched to fill 100% of the <code>.row</code>. If you place several columns into row they all will be the same widths.</p>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="12-column-based">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">12-column based</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><b>Prime Grid</b> is based on 12-column layout using flexbox. You can use from 1 to 12 columns in each row.</p>
+                </div>
+              </div>
+              <div class="row vert-gutter">
+                <div class="col">
+                  <div class="box">
+                    <p class="box-text hide-md">.col</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    <p class="box-text hide-md">.col</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    <p class="box-text hide-md">.col</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    <p class="box-text hide-md">.col</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    <p class="box-text hide-md">.col</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    <p class="box-text hide-md">.col</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    <p class="box-text hide-md">.col</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    <p class="box-text hide-md">.col</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    <p class="box-text hide-md">.col</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    <p class="box-text hide-md">.col</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    <p class="box-text hide-md">.col</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    <p class="box-text hide-md">.col</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row vert-gutter mb">
+                <div class="col">
+                  <div class="box">
+                    <p class="box-text">.col</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>Columns may have a number postfix that points on how much space it should take out of twelve.<br><code>.col-*</code>, where <code>*</code> is any number from 1 to 12.</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row&quot;&gt;<br>   &lt;div class=&quot;col-3&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col-5&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col-4&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter">
+                <div class="col-3">
+                  <div class="box">
+                    <p class="box-text">.col-3</p>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="box">
+                    <p class="box-text">.col-5</p>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="box">
+                    <p class="box-text">.col-4</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="responsiveness">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Responsiveness</div>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p><b>Prime Grid</b> provides five levels of predefined classes for building complex responsive layouts. You can change your layout behavior depending on your device width (see <a href="#breakpoints" class="link">Breakpoints</a>) using infixes.</p>
+                  <p><code>.col-{breakpoint}</code> (<code>.col-{breakpoint}-*</code>)</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>In the example below we will get 2 columns which are 8/12 and 4/12 width by default, 7/12 and 5/12 width on large and below devices, same (half) width on small devices.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row&quot;&gt;<br>   &lt;div class=&quot;col-8 col-lg-7 col-sm&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col-4 col-lg-5 col-sm&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter">
+                <div class="col-8 col-lg-7 col-sm">
+                  <div class="box">.col-8.col-lg-7.col-sm</div>
+                </div>
+                <div class="col-4 col-lg-5 col-sm">
+                  <div class="box">.col-4.col-lg-5.col-sm</div>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="offset">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Offset</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>You can also offset columns using <code>.col-offset-*</code> (<code>.col-{breakpoint}-offset-*</code>)</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row&quot;&gt;<br>   &lt;div class=&quot;col-offset-7 col-md-offset-6&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col-offset-6 col-md-offset-5&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col-offset-5 col-md-offset-4&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col-offset-4 col-md-offset-3&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col-offset-3 col-md-offset-2&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter">
+                <div class="col-offset-7 col-md-offset-6">
+                  <div class="box">.col-offset-7.col-md-offset-6</div>
+                </div>
+              </div>
+              <div class="row vert-gutter">
+                <div class="col-offset-6 col-md-offset-5">
+                  <div class="box">.col-offset-6.col-md-offset-5</div>
+                </div>
+              </div>
+              <div class="row vert-gutter">
+                <div class="col-offset-5 col-md-offset-4">
+                  <div class="box">.col-offset-5.col-md-offset-4</div>
+                </div>
+              </div>
+              <div class="row vert-gutter">
+                <div class="col-offset-4 col-md-offset-3">
+                  <div class="box">.col-offset-4.col-md-offset-3</div>
+                </div>
+              </div>
+              <div class="row vert-gutter">
+                <div class="col-offset-3 col-md-offset-2">
+                  <div class="box">.col-offset-3.col-md-offset-2</div>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="nesting">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Nesting</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>With <b>Prime Grid</b> you can nest grids inside grids which is nested inside grids...</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row&quot;&gt;<br>   &lt;div class=&quot;col-8&quot;&gt;<br>     &lt;div class=&quot;row&quot;&gt;<br>       &lt;div class=&quot;col-8&quot;&gt;<br>         &lt;div class=&quot;row&quot;&gt;<br>           &lt;div class=&quot;col-5&quot;&gt;...&lt;/div&gt;<br>           &lt;div class=&quot;col-7&quot;&gt;...&lt;/div&gt;<br>         &lt;/div&gt;<br>       &lt;/div&gt;<br>       &lt;div class=&quot;col-4&quot;&gt;<br>         &lt;div class=&quot;row&quot;&gt;<br>           &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br>         &lt;/div&gt;<br>       &lt;/div&gt;<br>     &lt;/div&gt;<br>   &lt;/div&gt;<br>   &lt;div class=&quot;col-4&quot;&gt;<br>     &lt;div class=&quot;row&quot;&gt;<br>       &lt;div class=&quot;col&quot;&gt;<br>         &lt;div class=&quot;row&quot;&gt;<br>           &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br>           &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br>         &lt;/div&gt;<br>       &lt;/div&gt;<br>     &lt;/div&gt;<br>   &lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter">
+                <div class="col-8 vert-gutter">
+                  <div class="row vert-gutter no-gutter-md box">
+                    <div class="col-8 vert-gutter">
+                      <div class="row vert-gutter no-gutter-md box-1">
+                        <div class="col-5 vert-gutter">
+                          <div class="box-2"></div>
+                        </div>
+                        <div class="col-7 vert-gutter">
+                          <div class="box-2"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 vert-gutter">
+                      <div class="row vert-gutter no-gutter-md box-1">
+                        <div class="col vert-gutter">
+                          <div class="box-2"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 vert-gutter">
+                  <div class="row vert-gutter no-gutter-md box">
+                    <div class="col vert-gutter">
+                      <div class="row vert-gutter no-gutter-md box-1">
+                        <div class="col vert-gutter">
+                          <div class="box-2"></div>
+                        </div>
+                        <div class="col vert-gutter">
+                          <div class="box-2"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="alignment">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Alignment</div>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p>Align your columns both vertically and horizontally</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.row-left</code> (<code>.row-left-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row row-left&quot;&gt;<br>   &lt;div class=&quot;col-6&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter mb">
+                <div class="col">
+                  <div class="row row-left vert-gutter box">
+                    <div class="col-6 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.row-center</code> (<code>.row-center-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row row-center&quot;&gt;<br>   &lt;div class=&quot;col-6&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter mb">
+                <div class="col">
+                  <div class="row row-center vert-gutter box">
+                    <div class="col-6 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.row-right</code> (<code>.row-right-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row row-right&quot;&gt;<br>   &lt;div class=&quot;col-6&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter mb">
+                <div class="col">
+                  <div class="row row-right vert-gutter box">
+                    <div class="col-6 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.row-top</code> (<code>.row-top-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row row-top&quot;&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row row-top vert-gutter mb">
+                <div class="col">
+                  <div class="box box--big"></div>
+                </div>
+                <div class="col">
+                  <div class="box"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.row-middle</code> (<code>.row-middle-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row row-middle&quot;&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row row-middle vert-gutter mb">
+                <div class="col">
+                  <div class="box box--big"></div>
+                </div>
+                <div class="col">
+                  <div class="box"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.row-bottom</code> (<code>.row-bottom-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row row-bottom&quot;&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row row-bottom vert-gutter mb">
+                <div class="col">
+                  <div class="box box--big"></div>
+                </div>
+                <div class="col">
+                  <div class="box"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.row-stretch</code> (<code>.row-stretch-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row row-stretch&quot;&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row row-stretch vert-gutter mb">
+                <div class="col">
+                  <div class="box box--big"></div>
+                </div>
+                <div class="col">
+                  <div class="box"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.row-baseline</code> (<code>.row-baseline-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row row-baseline&quot;&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row row-baseline vert-gutter mb">
+                <div class="col">
+                  <div class="box box--big">Content</div>
+                </div>
+                <div class="col">
+                  <div class="box">Content</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>Further more, you can align column itself relatively to its row</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.col-top</code> (<code>.col-top-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row row-bottom&quot;&gt;<br>   &lt;div class=&quot;col col-top&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row row-bottom vert-gutter mb">
+                <div class="col col-top">
+                  <div class="box"></div>
+                </div>
+                <div class="col">
+                  <div class="box box--big"></div>
+                </div>
+                <div class="col">
+                  <div class="box"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.col-middle</code> (<code>.col-middle-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row&quot;&gt;<br>   &lt;div class=&quot;col col-middle&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row row-top vert-gutter mb">
+                <div class="col col-middle">
+                  <div class="box"></div>
+                </div>
+                <div class="col">
+                  <div class="box box--big"></div>
+                </div>
+                <div class="col">
+                  <div class="box"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.col-bottom</code> (<code>.col-bottom-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row&quot;&gt;<br>   &lt;div class=&quot;col col-bottom&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row row-top vert-gutter mb">
+                <div class="col col-bottom">
+                  <div class="box"></div>
+                </div>
+                <div class="col">
+                  <div class="box box--big"></div>
+                </div>
+                <div class="col">
+                  <div class="box"></div>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="distribution">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Distribution</div>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p>Set distribution of contents</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.row-between</code> (<code>.row-between-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row row-between&quot;&gt;<br>   &lt;div class=&quot;col-2&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col-2&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col-2&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter mb">
+                <div class="col">
+                  <div class="row row-between vert-gutter box">
+                    <div class="col-2 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                    <div class="col-2 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                    <div class="col-2 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.row-around</code> (<code>.row-around-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row row-around&quot;&gt;<br>   &lt;div class=&quot;col-2&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col-2&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col-2&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter mb">
+                <div class="col">
+                  <div class="row row-around vert-gutter box">
+                    <div class="col-2 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                    <div class="col-2 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                    <div class="col-2 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.row-evenly</code> (<code>.row-evenly-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row row-evenly&quot;&gt;<br>   &lt;div class=&quot;col-2&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col-2&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col-2&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter mb">
+                <div class="col">
+                  <div class="row row-evenly vert-gutter box">
+                    <div class="col-2 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                    <div class="col-2 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                    <div class="col-2 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="reordering">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Reordering</div>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p>Change order of columns</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.first</code> (<code>.first-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row&quot;&gt;<br>   &lt;div class=&quot;col&quot;&gt;1&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;2&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;3&lt;/div&gt;<br>   &lt;div class=&quot;col first&quot;&gt;4&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter mb">
+                <div class="col">
+                  <div class="row vert-gutter box">
+                    <div class="col vert-gutter">
+                      <div class="box-2">1</div>
+                    </div>
+                    <div class="col vert-gutter">
+                      <div class="box-2">2</div>
+                    </div>
+                    <div class="col vert-gutter">
+                      <div class="box-2">3</div>
+                    </div>
+                    <div class="col first vert-gutter">
+                      <div class="box-2">4</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.last</code> (<code>.last-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row&quot;&gt;<br>   &lt;div class=&quot;col last&quot;&gt;1&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;2&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;3&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;4&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter mb">
+                <div class="col">
+                  <div class="row vert-gutter box">
+                    <div class="col last vert-gutter">
+                      <div class="box-2">1</div>
+                    </div>
+                    <div class="col vert-gutter">
+                      <div class="box-2">2</div>
+                    </div>
+                    <div class="col vert-gutter">
+                      <div class="box-2">3</div>
+                    </div>
+                    <div class="col vert-gutter">
+                      <div class="box-2">4</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>Reorder the whole row<br><code>.row-reverse</code> (<code>.row-reverse-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row row-reverse&quot;&gt;<br>   &lt;div class=&quot;col&quot;&gt;1&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;2&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;3&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;4&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter mb">
+                <div class="col">
+                  <div class="row row-reverse vert-gutter box">
+                    <div class="col vert-gutter">
+                      <div class="box-2">1</div>
+                    </div>
+                    <div class="col vert-gutter">
+                      <div class="box-2">2</div>
+                    </div>
+                    <div class="col vert-gutter">
+                      <div class="box-2">3</div>
+                    </div>
+                    <div class="col vert-gutter">
+                      <div class="box-2">4</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="breakage">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Breakage</div>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p>Break the row whenever and wherever you want to.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p><code>.row-break</code> (<code>.row-break-{breakpoint}</code>)</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row&quot;&gt;<br>   &lt;div class=&quot;col-4&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;row-break&quot;&gt;&lt;/div&gt;<br>   &lt;div class=&quot;col-4&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col-4&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter">
+                <div class="col">
+                  <div class="row vert-gutter box">
+                    <div class="col-4 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                    <div class="col-4 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                    <div class="row-break"></div>
+                    <div class="col-4 vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="visibility">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Visibility</div>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p>Show and hide any type of contents: containers, row, columns.</p>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p><code>.show</code> (<code>.show-{breakpoint}</code>)</p>
+                  <p><code>.hide</code> (<code>.hide-{breakpoint}</code>)</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>In this example the second column will be hidden on <code>md</code> breakpoint and wiil be shown on <code>sm</code>, and the whole row will be hidden on <code>xs</code> breakpoint</p>
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row hide-xs&quot;&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col hide-md show-sm&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row vert-gutter">
+                <div class="col">
+                  <div class="row hide-xs vert-gutter box">
+                    <div class="col vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                    <div class="col hide-md show-sm vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                    <div class="col vert-gutter">
+                      <div class="box-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="container" id="gutter">
+              <div class="row">
+                <div class="col">
+                  <div class="heading">Gutter</div>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <p>There is a default horizontal gutter applied to rows and columns. The default gutter value is 16px which can be changed by overriding <code>$gutter</code> value (see <a href="#usage" class="link">Usage</a>).</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>To add vertical paddings use this class on row or column.</p>
+                  <p><code>.vert-gutter</code> (<code>.vert-gutter-{breakpoint}</code>)</p>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row vert-gutter&quot;&gt;<br>   &lt;div class=&quot;col vert-gutter-md&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col vert-gutter-md&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>To disable vertical paddings use this class.</p>
+                  <p><code>.no-vert-gutter</code> (<code>.no-vert-gutter-{breakpoint}</code>)</p>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row vert-gutter no-vert-gutter-md&quot;&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>To add horizontal paddings use this class on row or column.</p>
+                  <p><code>.hor-gutter</code> (<code>.hor-gutter-{breakpoint}</code>)</p>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row hor-gutter&quot;&gt;<br>   &lt;div class=&quot;col hor-gutter-md&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col hor-gutter-md&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>To disable horizontal paddings use this class.</p>
+                  <p><code>.no-hor-gutter</code> (<code>.no-hor-gutter-{breakpoint}</code>)</p>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row no-hor-gutter&quot;&gt;<br>   &lt;div class=&quot;col&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>To disable all paddings you can apply special class to row/column. </p>
+                  <p><code>.no-gutter</code> (<code>.no-gutter-{breakpoint}</code>)</p>
+                </div>
+              </div>
+              <div class="row mb">
+                <div class="col">
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row no-gutter&quot;&gt;<br>   &lt;div class=&quot;col no-gutter-md&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col no-gutter-md&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <p>If you want to add both vertical and horizontal paddings just use</p>
+                  <p><code>.gutter</code> (<code>.gutter-{breakpoint}</code>)</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <pre><code class="html">&lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row&quot;&gt;<br>   &lt;div class=&quot;col no-gutter gutter-md&quot;&gt;...&lt;/div&gt;<br>   &lt;div class=&quot;col no-gutter gutter-md&quot;&gt;...&lt;/div&gt;<br> &lt;/div&gt;<br>&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="footer__name">Prime Grid</p>
+              <p class="footer__version">v1.6.4</p>
+            </div>
+            <div class="col">
+              <p class="footer__contacts">Contacts:</p><a class="footer__contacts-item" href="//nmihalyov.tk" target="_blank">Website</a><a class="footer__contacts-item" href="mailto:nikita.mihalyov@gmail.com" target="_blank">E-mail</a><a class="footer__contacts-item" href="//t.me/nmihalyov" target="_blank">Telegram</a><a class="footer__contacts-item" href="//github.com/nmihalyov" target="_blank">GitHub</a><a class="footer__contacts-item" href="//github.com/nmihalyov/prime-grid/issues/new" target="_blank">Write Issue</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/languages/html.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <noscript><link rel="stylesheet" href="css/style.min.css"></noscript>
+    <noscript><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css"></noscript>
+  </body>
+</html>
